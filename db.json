@@ -1,0 +1,50 @@
+{
+    "products":[
+        {
+            "id":1,
+            "title": "Куртка Bella",
+            "price": 2000,
+            "availability": ["XS", "S", "M"],
+            "color": "білий",
+            "category":"куртка",
+            "image": "assets/images/1.png"
+
+        },
+        {
+            "id":2,
+            "title": "Пальто Fiona",
+            "price": 2000,
+            "availability": [],
+            "color": "білий",
+            "category":"пальто",
+            "image": "assets/images/2.png"
+        },
+        {
+            "id":3,
+            "title": "Куртка Neoni",
+            "price": 5000,
+            "availability": ["XS", "L"],
+            "color": "голубий",
+            "category":"куртка",
+            "image": "assets/images/3.png"
+        },
+        {
+            "id":4,
+            "title": "Куртка Neoni",
+            "price": 900,
+            "availability": ["S", "L"],
+            "color": "голубий",
+            "category":"куртка",
+            "image": "assets/images/3.png"
+        },
+        {
+            "id":5,
+            "title": "Куртка Neoni",
+            "price": 1000,
+            "availability": [],
+            "color": "голубий",
+            "category":"куртка",
+            "image": "assets/images/3.png"
+        }
+    ]
+}

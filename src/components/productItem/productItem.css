@@ -1,0 +1,14 @@
+.product-item{
+    width: 150px;
+    height: 200px;
+    border: 1px solid black;
+}
+.product-item__availability{
+    display: flex;
+    justify-content: center;
+    gap:5px;
+    color:rgba(0, 0, 0, 0.279)
+}
+.available{
+    color:black
+}
