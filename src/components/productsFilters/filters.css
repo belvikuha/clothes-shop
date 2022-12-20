@@ -1,0 +1,16 @@
+.filters__container{
+    margin: 0px 100px;
+    display: flex;
+    position: relative;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 41px;
+    margin-top: 34px;
+    color: #252525;
+}
+.avail{
+    position: absolute;
+    right:100px;
+}

@@ -48,7 +48,34 @@ const productsSlice = createSlice({
         },
         productDeleted: (state, action) => {
             state.products = state.products.filter(item => item.id !== action.payload);
-        }
+        },
+        addToCart: (state, action) =>{
+            // console.log("dgdg")
+            const {cart} = state
+            state.cart = [...cart, action.payload]
+            
+            localStorage.setItem('cart', JSON.stringify(state.cart))
+        },
+        removeFromCart: (state, action) =>{
+           state.cart = state.cart.filter(item => item.product.id !== action.payload)
+        //    localStorage.setItem('cart', JSON.stringify(state.cart))
+        },
+        plusQuantity : (state, action) =>{
+            state.cart = state.cart.map(item =>{
+                if(item.product.id === action.payload)
+                    return {...item, quantity: item.quantity+1}
+                else{return item} 
+            } 
+            )
+        },
+        minusQuantity : (state, action) =>{
+            state.cart = state.cart.map(item =>{
+                if(item.product.id === action.payload)
+                    return {...item, quantity: item.quantity-1}
+                else{return item} 
+            } 
+            )
+        },
     },
     extraReducers: (builder) => {
         builder
@@ -72,5 +99,9 @@ export const {
     productCreated,
     productDeleted,
     filtersChanged,
-    sortByChanged
+    sortByChanged,
+    addToCart,
+    removeFromCart,
+    plusQuantity,
+    minusQuantity
 } = actions;

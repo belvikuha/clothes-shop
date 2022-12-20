@@ -7,7 +7,7 @@
             "availability": ["XS", "S", "M"],
             "color": "білий",
             "category":"куртка",
-            "image": "assets/images/1.png"
+            "image": "https://snowqueen.ru/img/450/675/resizeWebP/catalog/product/s/l/sl_582426003_2.jpg"
 
         },
         {
@@ -17,7 +17,7 @@
             "availability": [],
             "color": "білий",
             "category":"пальто",
-            "image": "assets/images/2.png"
+            "image": "https://snowqueen.ru/img/450/675/resizeWebP/catalog/product/s/l/sl_582422003_2.jpg"
         },
         {
             "id":3,
@@ -26,7 +26,7 @@
             "availability": ["XS", "L"],
             "color": "голубий",
             "category":"куртка",
-            "image": "assets/images/3.png"
+            "image": "https://snowqueen.ru/img/450/675/resizeWebP/catalog/product/s/l/sl_561803003_5.jpg"
         },
         {
             "id":4,
@@ -35,16 +35,34 @@
             "availability": ["S", "L"],
             "color": "голубий",
             "category":"куртка",
-            "image": "assets/images/3.png"
+            "image": "https://content.rozetka.com.ua/goods/images/big/296618408.jpg"
         },
         {
             "id":5,
             "title": "Куртка Neoni",
             "price": 1000,
-            "availability": [],
+            "availability": ["XS", "L", "M"],
             "color": "голубий",
             "category":"куртка",
-            "image": "assets/images/3.png"
+            "image": "https://static.cropp.com/media/catalog/product/6/7/6712N-99X-002-1-549597_2.jpg"
+        },
+        {
+            "id":6,
+            "title": "Куртка Neoni",
+            "price": 7000,
+            "availability": ["S"],
+            "color": "голубий",
+            "category":"куртка",
+            "image": "https://img2.ans-media.com/i/540x813/AW22-KUD0MA_00X_F4.jpg@webp?v=1664274064"
+        },
+        {
+            "id":7,
+            "title": "Куртка Neoni",
+            "price": 900,
+            "availability": ["S", "L"],
+            "color": "голубий",
+            "category":"куртка",
+            "image": "https://img2.ans-media.com/i/1080x1626/WZ22-KUD00F_50X_F1.jpg?v=1664527586"
         }
     ]
 }

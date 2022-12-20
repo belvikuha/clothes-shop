@@ -1,14 +1,72 @@
 .product-item{
-    width: 150px;
-    height: 200px;
-    border: 1px solid black;
+    width: 310px;
+    height: 500px;
+    /* border: 1px solid black; */
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+
+    text-align: center;
+    margin-bottom: 60px;
+    color: #252525;
+}
+.priceP{
+    font-weight: 700;
+    color: #252525;
+}
+.product-item img{
+    width: 310px;
+    height: 360px;
+    object-fit: cover;
 }
 .product-item__availability{
     display: flex;
+    /* position: relative; */
     justify-content: center;
     gap:5px;
     color:rgba(0, 0, 0, 0.279)
 }
+.available div{
+    /* position: relative; */
+    margin-top: -22px;
+    color: #E0BEA2;;
+    border-radius: 50%;
+    width: 23px;
+    height: 23px;
+    /* top:-2px; */
+    border: 1px solid #E0BEA2;
+    text-align: center;
+}
 .available{
-    color:black
+    color: #E0BEA2;
+    /* position: relative; */
+     
+}
+.cartbutton{
+    cursor: pointer;
+    box-sizing:border-box;
+    padding: 10px  17px;
+    width: 310px;
+    height: 40px;
+    background: #E0BEA2;
+    color: #FFFFFF;
+    border: 0.5px solid #6954543a;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 200;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+
+    
+}
+button[disabled] {
+    background: #e0bea2a4;
+    border: 0.5px solid #25252503;
+    cursor:no-drop
 }

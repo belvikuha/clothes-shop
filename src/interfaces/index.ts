@@ -10,7 +10,7 @@ export interface IAction {
 }
 
 export interface ICartItem {
-    id: number
+    product: IProduct
     quantity: number
 } 
 

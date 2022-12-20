@@ -2,5 +2,10 @@
     display: flex;
     flex-wrap: wrap;
     gap:20px;
+    padding: 50px 100px
+   
     /* width: 100vw; */
+}
+.catalog{
+     margin-top: 200px;
 }

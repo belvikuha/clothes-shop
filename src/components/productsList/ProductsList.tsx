@@ -9,7 +9,7 @@ import './products.css'
 import ProductItem from '../productItem/ProductItem';
 // import { RootState } from 'app/redux/store';
 
-import { RootState } from '../../store';
+import { RootState, AppDispatch } from '../../store';
 
 import Filters from '../productsFilters/Filters';
 
@@ -32,6 +32,7 @@ const ProductsList = () => {
     const dispatch = useDispatch<any>();
  
     const productsi = useSelector(filteredProductsSelector);
+    const cart = useSelector((state:RootState) => state.products.cart);
     const filters = useSelector((state:RootState) => state.products.filterString);
     const loadingType = useSelector((state:RootState) => state.products.loading)
     useEffect(() => {
@@ -40,22 +41,19 @@ const ProductsList = () => {
 
 
     function renderProductsList(products: IProduct[]){
-        return products.map(product=>{
+        return products.map((product, i)=>{
             return <ProductItem
-                title={product.title}
-                price={product.price} 
-                availability={product.availability} 
-                id={0} 
-                color={''} 
-                category={''}            
+                    key={i}
+                    product={product}           
                 />
         })
     }
+
+    
     const products = renderProductsList(productsi)
     return (
-        <div>
+        <div className='catalog'>
             <Filters/>
-            <button onClick={()=>{console.log(productsi)}}>fvfvf</button>
             <div className="product-list__container">
                 {loadingType ? '...loading' :products }
             </div>
