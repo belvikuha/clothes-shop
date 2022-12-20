@@ -26,25 +26,21 @@ const ProductItem = (props : Props) => {
         const updatedCart = {product: {...props.product}, quantity:1}
         dispatch(addToCart(updatedCart)) ;
         setInCart(true)
-        // localStorage.setItem('cart', JSON.stringify(updatedCart))
     }
 
     useEffect(()=>{
-        console.log(cart)
-    //    var t = cart.filter(i=>JSON.stringify(Object.entries(i).sort()) == JSON.stringify(Object.entries({id: id, quantity:1}).sort())  ).length > 0
         var ifInCart = cart.filter(i=> i.product.id === id).length > 0
         if(ifInCart)setInCart(true);
     },[])
 
-    const a = checkAvailability(availability);
-    // console.log(image)
+    const available = checkAvailability(availability);
     return (
         <div className='product-item' key={id}>
             <img src={image} alt="" />
             <p>{title}</p>
             <p className='priceP'>{price}</p>
             <div className="product-item__availability">
-                {a}
+                {available}
             </div>
             <button className="cartbutton" disabled={inCart} onClick={addItemToCart}>{inCart ? "Вже в кошику": "Додати у кошик"}</button>
         </div>

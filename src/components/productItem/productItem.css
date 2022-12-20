@@ -1,14 +1,11 @@
 .product-item{
     width: 310px;
     height: 500px;
-    /* border: 1px solid black; */
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
     line-height: 19px;
-    /* identical to box height */
-
     text-align: center;
     margin-bottom: 60px;
     color: #252525;
@@ -24,26 +21,22 @@
 }
 .product-item__availability{
     display: flex;
-    /* position: relative; */
     justify-content: center;
     gap:5px;
     color:rgba(0, 0, 0, 0.279)
 }
 .available div{
-    /* position: relative; */
     margin-top: -22px;
     color: #E0BEA2;;
     border-radius: 50%;
     width: 23px;
     height: 23px;
-    /* top:-2px; */
     border: 1px solid #E0BEA2;
     text-align: center;
 }
 .available{
     color: #E0BEA2;
-    /* position: relative; */
-     
+    
 }
 .cartbutton{
     cursor: pointer;

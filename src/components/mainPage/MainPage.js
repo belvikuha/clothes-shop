@@ -1,8 +1,8 @@
 import React from 'react';
 import './main.css'
-import backImg1 from './1.png';
-import backImg2 from './2.png'
-import backImg3 from './3.png'
+import backImg1 from './img/1.png';
+import backImg2 from './img/2.png'
+import backImg3 from './img/3.png'
 const MainPage = () => {
     return (
         <div className='main'>

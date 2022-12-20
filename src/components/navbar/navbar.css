@@ -8,7 +8,6 @@
     display: flex;
     justify-content: space-around;
     z-index: 100;
-    /* padding: 15px 0; */
 }
 .nav-item{
     cursor: pointer;
@@ -33,9 +32,6 @@
     line-height: 21px;
     margin-top: 34px;
    
-}
-.navbar__logo{
-    /* position: relative; */
 }
 .logo{
     position: absolute;

@@ -31,7 +31,6 @@ const Filters = () => {
     //     dispatch(sortByChanged(value))
     // }
     const onSortChange =(value: string)=>{
-        // const {target: {value}} = e;
         dispatch(sortByChanged(value))
     }
 
@@ -45,14 +44,6 @@ const Filters = () => {
 
     return (
         <div className='filters__container'>
-            {/* <input type="number" value={priceFrom} onChange={(e)=>setPriceFrom(e.target.value)}/>
-            <input type="number"  onChange={debounce(setd,3000)}/> */}
-           
-
-            {/* <select name="" id="" onChange={onSortChange} placeholder="Сортувати по">
-                <option value="LOW">Від дешевих до дорогих</option>
-                <option value="HIGH">Від дорогих до дешевих</option>
-            </select> */}
             <Form.Label>Ціна до:</Form.Label>
             <MDBRange
                 id='customRange'

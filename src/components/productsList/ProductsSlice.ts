@@ -1,8 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 import { RootState } from "../../store";
-// import {useHttp} from '../../hooks/http.hook';
-import { IMainReducerState, IAction, IProduct } from "../../interfaces";
+import { IMainReducerState, IProduct } from "../../interfaces";
 
 const cart = localStorage.getItem('cart')
 
@@ -16,7 +15,6 @@ const initialState: IMainReducerState = {
     sortBy: 'LOW',
     currency: 'USD',
     filterString: ''
-    // '?price_gte=10&price_lte=3000&category=пальто'
 }
 
 
@@ -37,7 +35,6 @@ const productsSlice = createSlice({
     initialState,
     reducers: {
         filtersChanged: (state, action) => {
-            // console.log(action.payload)
             state.filterString = action.payload;
         },
         sortByChanged: (state, action) => {
@@ -50,7 +47,6 @@ const productsSlice = createSlice({
             state.products = state.products.filter(item => item.id !== action.payload);
         },
         addToCart: (state, action) =>{
-            // console.log("dgdg")
             const {cart} = state
             state.cart = [...cart, action.payload]
             
@@ -58,7 +54,6 @@ const productsSlice = createSlice({
         },
         removeFromCart: (state, action) =>{
            state.cart = state.cart.filter(item => item.product.id !== action.payload)
-        //    localStorage.setItem('cart', JSON.stringify(state.cart))
         },
         plusQuantity : (state, action) =>{
             state.cart = state.cart.map(item =>{

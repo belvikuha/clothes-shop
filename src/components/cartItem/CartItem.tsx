@@ -10,8 +10,6 @@ const CartItem = ({product, quantity}: ICartItem) => {
     
     const dispatch = useDispatch<any>(); 
 
-    
-    
     return (
         <div className='cart-item__container'>
             <img className="cart-item__img"src={product.image} alt="" />

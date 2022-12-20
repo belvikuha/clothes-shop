@@ -21,13 +21,12 @@ function Appd(){
       <Navbar currentStr={location.pathname}/>
         <div className="content">
           <Routes>
-              <Route path='/' element={<MainPage/>}  />   
-              <Route path='/catalog' element={<ProductsList/>}  /> 
-              <Route path='/cart' element={<Cart/>}  />  
-            </Routes>
+            <Route path='/' element={<MainPage/>}  />   
+            <Route path='/catalog' element={<ProductsList/>}  /> 
+            <Route path='/cart' element={<Cart/>}  />  
+          </Routes>
         </div>
-            
-        <Footer/>
+      <Footer/>
       </div>
   )
 }
@@ -36,9 +35,7 @@ function App() {
   
   return (
     <Router>
-      
         <Appd/>
-      
     </Router>
   );
 }

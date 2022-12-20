@@ -3,12 +3,10 @@ import { useEffect } from 'react';
 import { useDispatch,useSelector,  } from 'react-redux';
 import { createSelector } from '@reduxjs/toolkit';
 import {  fetchProducts } from './ProductsSlice';
-import { IMainReducerState, IProduct } from '../../interfaces';
+import { IProduct } from '../../interfaces';
 import './products.css'
 
 import ProductItem from '../productItem/ProductItem';
-// import { RootState } from 'app/redux/store';
-
 import { RootState, AppDispatch } from '../../store';
 
 import Filters from '../productsFilters/Filters';
@@ -32,7 +30,6 @@ const ProductsList = () => {
     const dispatch = useDispatch<any>();
  
     const productsi = useSelector(filteredProductsSelector);
-    const cart = useSelector((state:RootState) => state.products.cart);
     const filters = useSelector((state:RootState) => state.products.filterString);
     const loadingType = useSelector((state:RootState) => state.products.loading)
     useEffect(() => {
